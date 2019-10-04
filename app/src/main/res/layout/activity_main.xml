@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFA33E"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFA33E"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/clock1"
+                layout="@layout/clock" />
+
+            <include
+                android:id="@+id/clock2"
+                layout="@layout/clock" />
+
+            <include
+                android:id="@+id/clock3"
+                layout="@layout/clock" />
+
+            <include
+                android:id="@+id/clock4"
+                layout="@layout/clock" />
+
+            <include
+                android:id="@+id/clock5"
+                layout="@layout/clock" />
+
+            <include
+                android:id="@+id/clock6"
+                layout="@layout/clock" />
+
+            <include
+                android:id="@+id/clock7"
+                layout="@layout/clock" />
+
+            <include
+                android:id="@+id/clock8"
+                layout="@layout/clock" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/option"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/toggle"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:text="@string/_12hr_24hr"
+            android:textColor="#222222"
+            android:textSize="25sp" />
+
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="#CACACA"
+            android:textColor="#252525"
+            android:textOff="@string/_12hr"
+            android:textOn="@string/_24hr"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

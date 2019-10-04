@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">World Wide Clock</string>
+    <string name="_12hr">12HR</string>
+    <string name="_24hr">24HR</string>
+    <string name="_12hr_24hr">12HR/24HR: </string>
+    <string name="sydney">Sydney</string>
+    <string name="hong_kong">Hong Kong</string>
+    <string name="seoul">Seoul</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="london">London</string>
+    <string name="paris">Paris</string>
+    <string name="auckland">Auckland</string>
+    <string name="chicago">Chicago</string>
+</resources>
